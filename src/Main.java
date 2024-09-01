@@ -10,9 +10,9 @@ public class Main {
         int[] arrays = new int[]{1, 2, 3};
         System.out.println("Второй способ");
         int[] arrays1 = new int[3];
-        arrays1[0] = 2;
+        arrays1[0] = 1;
         arrays1[1] = 2;
-        arrays1[2] = 4;
+        arrays1[2] = 3;
         System.out.println("Объявите массив, в котором можно хранить три дробных числа — 1.57, 7.654, 9.986. Массив сразу заполните значениями.");
         double[] a = {1.57, 7.654, 9.986};
         System.out.println("Объявите произвольный массив. Тип и количество данных определите сами. Самостоятельно выберите способ создания массива: с помощью ключевого слова или сразу заполненный элементами.");
@@ -76,6 +76,12 @@ public class Main {
 
 
         System.out.println("Задача 4.");
-        System.out.println(Arrays.toString(arrays1));
+        for (int i = 0; i < arrays1.length; i++) {
+            arrays1[i]+=1;
+            if (arrays1[i]%2==0){
+                System.out.print(arrays1[i] + " ");
+            }
+
+        }
     }
 }
